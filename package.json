@@ -4,10 +4,19 @@
   "description": "Servicio de cosecha de arándanos",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --env-file .env --watch index",
+    "start": "node index"
   },
   "type": "module",
   "keywords": [],
   "author": "Ignacio LP",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "mongoose": "^9.12.0",
+    "morgan": "^1.12.1"
+  }
 }
